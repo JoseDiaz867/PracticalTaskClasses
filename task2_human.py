@@ -5,7 +5,7 @@ class Human:
         self.name = name
 
     def welcome(self):
-        return f"Welcome, {self.name}!"
+        print(f"Welcome, {self.name}!")
     
     @classmethod
     def species(cls):
@@ -18,6 +18,6 @@ class Human:
 # Test.
 
 person1 = Human("Pepe")
-print(person1.welcome())
+person1.welcome()
 print(Human.species())
 print(Human.arbitrary_message())
